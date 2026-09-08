@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dcde5b4c-f7c0-4e9a-bc2b-74b30104ffea" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "El-Duckster"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/lerniajava25/LEF-Lab3-warehouse-management-system.git",
+    "accountId": "75337665-3344-477c-a8a1-fdbfb5436a85"
+  }
+}]]></component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0" />
+      <entry key="S60" value="1.0000000000625415" />
+      <entry key="M2" value="1.0000169856568086" />
+      <entry key="M5" value="1.0321054262935787" />
+      <entry key="M10" value="1.3998750956052195" />
+      <entry key="M15" value="1.9277151864833484" />
+      <entry key="M30" value="3.153257304592209" />
+      <entry key="H1" value="4.281019072902777" />
+      <entry key="H2" value="5.050263828455035" />
+      <entry key="H4" value="5.500130837727322" />
+      <entry key="D1" value="5.912987389547008" />
+      <entry key="W1" value="5.987475847883112" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.5193946687212722E-7" />
+      <entry key="MS500" value="0.0432846708784664" />
+      <entry key="S2" value="0.45612463612249793" />
+      <entry key="S5" value="0.730522189272838" />
+      <entry key="S10" value="0.8547059080600987" />
+      <entry key="S30" value="0.9490131610509568" />
+      <entry key="S60" value="0.9741730653080625" />
+      <entry key="M2" value="0.9870189191313936" />
+      <entry key="M5" value="1.026761705225573" />
+      <entry key="M10" value="1.3964229466840283" />
+      <entry key="M15" value="1.9246399025303642" />
+      <entry key="M30" value="3.150798377947326" />
+      <entry key="H1" value="4.279358220437619" />
+      <entry key="H2" value="5.0492849395287145" />
+      <entry key="H4" value="5.49959778167946" />
+      <entry key="D1" value="5.912891857263948" />
+      <entry key="W1" value="5.987462027733635" />
+    </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3J3pYa1gbdSdw7sCwNEkLYzMkDm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.WarehouseApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\46708\IdeaProjects\LEF-Lab3-warehouse-management-system\src\resources" />
+      <recent name="C:\Users\46708\IdeaProjects\LEF-Lab3-warehouse-management-system\src" />
+      <recent name="C:\Users\46708\IdeaProjects\LEF-Lab3-warehouse-management-system\.idea" />
+      <recent name="C:\Users\46708\IdeaProjects\LEF-Lab3-warehouse-management-system\src\main\java\com\warehouse" />
+      <recent name="C:\Users\46708\IdeaProjects\LEF-Lab3-warehouse-management-system\src\main\java\com" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dcde5b4c-f7c0-4e9a-bc2b-74b30104ffea" name="Changes" comment="" />
+      <created>1788899658425</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1788899658425</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
