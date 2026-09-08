@@ -4,11 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcde5b4c-f7c0-4e9a-bc2b-74b30104ffea" name="Changes" comment="" />
+    <list default="true" id="dcde5b4c-f7c0-4e9a-bc2b-74b30104ffea" name="Changes" comment="feature/add Wareh">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/warehouse/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/controller/ProductControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/service/WarehouseServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/warehouse/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/warehouse/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Record" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,61 +41,61 @@
 }]]></component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
+      <entry key="MS100" value="3.8522082393189297E-60" />
+      <entry key="MS500" value="1.3098319497109394E-12" />
+      <entry key="S2" value="0.0011918281765944123" />
+      <entry key="S5" value="0.0920254765126798" />
+      <entry key="S10" value="0.4195377257065755" />
+      <entry key="S30" value="1.18221268105428" />
+      <entry key="S60" value="1.536671266890529" />
+      <entry key="M2" value="1.7576129132360594" />
+      <entry key="M5" value="2.472476852130759" />
+      <entry key="M10" value="6.1286884819641045" />
+      <entry key="M15" value="11.175501073489189" />
+      <entry key="M30" value="26.32663093769395" />
+      <entry key="H1" value="46.31467721805094" />
+      <entry key="H2" value="63.995504344055256" />
+      <entry key="H4" value="76.03687509105275" />
+      <entry key="D1" value="88.27137513544525" />
+      <entry key="W1" value="90.60397490700639" />
+    </decayedCancelled>
+    <decayedSelected>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
       <entry key="S2" value="1.0" />
       <entry key="S5" value="1.0" />
       <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0000000000625415" />
-      <entry key="M2" value="1.0000169856568086" />
-      <entry key="M5" value="1.0321054262935787" />
-      <entry key="M10" value="1.3998750956052195" />
-      <entry key="M15" value="1.9277151864833484" />
-      <entry key="M30" value="3.153257304592209" />
-      <entry key="H1" value="4.281019072902777" />
-      <entry key="H2" value="5.050263828455035" />
-      <entry key="H4" value="5.500130837727322" />
-      <entry key="D1" value="5.912987389547008" />
-      <entry key="W1" value="5.987475847883112" />
-    </decayedCancelled>
-    <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="0.0" />
-      <entry key="S60" value="0.0" />
-      <entry key="M2" value="0.0" />
-      <entry key="M5" value="0.0" />
-      <entry key="M10" value="0.0" />
-      <entry key="M15" value="0.0" />
-      <entry key="M30" value="0.0" />
-      <entry key="H1" value="0.0" />
-      <entry key="H2" value="0.0" />
-      <entry key="H4" value="0.0" />
-      <entry key="D1" value="0.0" />
-      <entry key="W1" value="0.0" />
+      <entry key="S30" value="1.0000000000007596" />
+      <entry key="S60" value="1.0000012727178575" />
+      <entry key="M2" value="1.0019612946345289" />
+      <entry key="M5" value="1.2283073966769988" />
+      <entry key="M10" value="2.352828908811723" />
+      <entry key="M15" value="3.5583290203781397" />
+      <entry key="M30" value="5.978042701180567" />
+      <entry key="H1" value="8.026291152841186" />
+      <entry key="H2" value="9.373463918622589" />
+      <entry key="H4" value="10.14823585754842" />
+      <entry key="D1" value="10.852357592915668" />
+      <entry key="W1" value="10.978764483720793" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.5193946687212722E-7" />
-      <entry key="MS500" value="0.0432846708784664" />
-      <entry key="S2" value="0.45612463612249793" />
-      <entry key="S5" value="0.730522189272838" />
-      <entry key="S10" value="0.8547059080600987" />
-      <entry key="S30" value="0.9490131610509568" />
-      <entry key="S60" value="0.9741730653080625" />
-      <entry key="M2" value="0.9870189191313936" />
-      <entry key="M5" value="1.026761705225573" />
-      <entry key="M10" value="1.3964229466840283" />
-      <entry key="M15" value="1.9246399025303642" />
-      <entry key="M30" value="3.150798377947326" />
-      <entry key="H1" value="4.279358220437619" />
-      <entry key="H2" value="5.0492849395287145" />
-      <entry key="H4" value="5.49959778167946" />
-      <entry key="D1" value="5.912891857263948" />
-      <entry key="W1" value="5.987462027733635" />
+      <entry key="MS100" value="3.3417885713722773E-47" />
+      <entry key="MS500" value="5.080406011659172E-10" />
+      <entry key="S2" value="0.005931812142016628" />
+      <entry key="S5" value="0.20952221988543193" />
+      <entry key="S10" value="0.7622374130405056" />
+      <entry key="S30" value="1.8819571075031645" />
+      <entry key="S60" value="2.373170443504669" />
+      <entry key="M2" value="2.674108993603338" />
+      <entry key="M5" value="3.662632496282571" />
+      <entry key="M10" value="8.454340238482057" />
+      <entry key="M15" value="14.709687223706334" />
+      <entry key="M30" value="32.28587704547422" />
+      <entry key="H1" value="54.32812887143347" />
+      <entry key="H2" value="73.3611898202885" />
+      <entry key="H4" value="86.18077822823861" />
+      <entry key="D1" value="99.12293690402815" />
+      <entry key="W1" value="101.58262370901208" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -98,12 +112,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Unnamed.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "Spring Boot.WarehouseApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature/ground-work",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.jshint": "true",
@@ -127,6 +142,15 @@
       <recent name="C:\Users\46708\IdeaProjects\LEF-Lab3-warehouse-management-system\src\main\java\com" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.warehouse.WarehouseApplication" />
+      <module name="LEF-Lab3-warehouse-management-system" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -147,5 +171,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chore/add project skalette" />
+    <MESSAGE value="chore/add product record" />
+    <MESSAGE value="chore/product repository" />
+    <MESSAGE value="chore/in memory product repository" />
+    <MESSAGE value="feature/add CreateProductRequest and in memory product repository" />
+    <MESSAGE value="feature/add uppdate product request" />
+    <MESSAGE value="feature/add api error for exception" />
+    <MESSAGE value="feature/add ProductNotFoundException" />
+    <MESSAGE value="feature/add Wareh" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature/add Wareh" />
   </component>
 </project>
