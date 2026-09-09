@@ -4,15 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96b0f0cc-031f-4ac8-b447-a7fbc29e8ec2" name="Changes" comment="chore/ add me readme file">
+    <list default="true" id="96b0f0cc-031f-4ac8-b447-a7fbc29e8ec2" name="Changes" comment="chore/edited">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/warehouse/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/warehouse/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/warehouse/controller/ProductController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,23 +39,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0819688564282657" />
-      <entry key="MS500" value="2.0020392859236056" />
-      <entry key="S2" value="4.466923349269983" />
-      <entry key="S5" value="7.231632098936629" />
-      <entry key="S10" value="9.323234375433286" />
-      <entry key="S30" value="11.914300664560335" />
-      <entry key="S60" value="13.14802188938677" />
-      <entry key="M2" value="15.046700238712226" />
-      <entry key="M5" value="18.727822462682322" />
-      <entry key="M10" value="21.220673949364034" />
-      <entry key="M15" value="22.306227066544064" />
-      <entry key="M30" value="23.556377619615795" />
-      <entry key="H1" value="24.25199418671803" />
-      <entry key="H2" value="24.619177154672045" />
-      <entry key="H4" value="24.807848345179654" />
-      <entry key="D1" value="24.967729969120477" />
-      <entry key="W1" value="24.995383961292617" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.000000047591324" />
+      <entry key="S5" value="1.0017407703060484" />
+      <entry key="S10" value="1.0587471719253823" />
+      <entry key="S30" value="1.616486531493809" />
+      <entry key="S60" value="2.1102570061948587" />
+      <entry key="M2" value="2.4900935433829785" />
+      <entry key="M5" value="2.793947034477405" />
+      <entry key="M10" value="3.5074051695634947" />
+      <entry key="M15" value="5.042982359972438" />
+      <entry key="M30" value="10.223173847079453" />
+      <entry key="H1" value="16.445971046981597" />
+      <entry key="H2" value="21.334929460550565" />
+      <entry key="H4" value="24.40959532621137" />
+      <entry key="D1" value="27.36226202259761" />
+      <entry key="W1" value="27.90788165300544" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -72,23 +77,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9966672976701278" />
-      <entry key="MS500" value="1.9715542158602781" />
-      <entry key="S2" value="4.423760356242159" />
-      <entry key="S5" value="7.173936766305029" />
-      <entry key="S10" value="9.27662811584186" />
-      <entry key="S30" value="11.89198553218981" />
-      <entry key="S60" value="13.135342739542562" />
-      <entry key="M2" value="15.03819665415578" />
-      <entry key="M5" value="18.721006570919844" />
-      <entry key="M10" value="21.215669724179154" />
-      <entry key="M15" value="22.30237455392141" />
-      <entry key="M30" value="23.554137480312605" />
-      <entry key="H1" value="24.250783330980518" />
-      <entry key="H2" value="24.618547303196433" />
-      <entry key="H4" value="24.807527084781803" />
-      <entry key="D1" value="24.967675525862365" />
-      <entry key="W1" value="24.99537616138125" />
+      <entry key="MS100" value="0.9265880618903709" />
+      <entry key="MS500" value="0.9848664428955506" />
+      <entry key="S2" value="0.9961949746309197" />
+      <entry key="S5" value="0.9998206982906277" />
+      <entry key="S10" value="1.0506295171816529" />
+      <entry key="S30" value="1.5887303964906119" />
+      <entry key="S60" value="2.084939707791474" />
+      <entry key="M2" value="2.4729803856983175" />
+      <entry key="M5" value="2.785736723002426" />
+      <entry key="M10" value="3.5029008888774302" />
+      <entry key="M15" value="5.03965201713215" />
+      <entry key="M30" value="10.220970994885333" />
+      <entry key="H1" value="16.444534959928124" />
+      <entry key="H2" value="21.334076315389765" />
+      <entry key="H4" value="24.409125616751133" />
+      <entry key="D1" value="27.362176764988828" />
+      <entry key="W1" value="27.907869288309083" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -170,7 +175,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="chore/ add me readme file" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore/ add me readme file" />
+    <MESSAGE value="chore/edited" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore/edited" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

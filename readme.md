@@ -78,16 +78,16 @@ input (validation failures or bad parameters).
 ### Example: create a product
 
 ```bash
-curl -X POST http://localhost:8080/api/products \
-  -H "Content-Type: application/json" \
-  -d '{
-        "name": "Laptop",
-        "category": "Electronics",
-        "price": 15000.00,
-        "quantity": 5,
-        "expiryDate": "2030-01-01",
-        "unitsSold": 50
-      }'
+$body = @{
+    name       = "Laptop"
+    category   = "Electronics"
+    price      = 15000.00
+    quantity   = 5
+    expiryDate = "2030-01-01"
+    unitsSold  = 50
+} | ConvertTo-Json
+
+Invoke-RestMethod -Uri "http://localhost:8080/api/products" -Method Post -ContentType "application/json" -Body $body
 ```
 
 ## How the assignment requirements are met
