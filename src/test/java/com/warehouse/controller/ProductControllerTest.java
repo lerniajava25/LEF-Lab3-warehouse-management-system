@@ -1,4 +1,4 @@
-package com.controller;
+package com.warehouse.controller;
 
 public class ProductControllerTest {
 }
