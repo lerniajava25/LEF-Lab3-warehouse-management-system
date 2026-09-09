@@ -78,16 +78,40 @@ input (validation failures or bad parameters).
 ### Example: create a product
 
 ```bash
-curl -X POST http://localhost:8080/api/products \
-  -H "Content-Type: application/json" \
-  -d '{
-        "name": "Laptop",
-        "category": "Electronics",
-        "price": 15000.00,
-        "quantity": 5,
-        "expiryDate": "2030-01-01",
-        "unitsSold": 50
-      }'
+$base = "http://localhost:8080/api/products"
+
+# List all right now -> returns nothing / empty [] (expected: warehouse is empty)
+Invoke-RestMethod $base
+
+# CREATE a product first, and capture its generated id
+$body = @{
+    name       = "Laptop"
+    category   = "Electronics"
+    price      = 15000.00
+    quantity   = 5
+    expiryDate = "2030-01-01"
+    unitsSold  = 50
+} | ConvertTo-Json
+
+$p = Invoke-RestMethod -Uri $base -Method Post -ContentType "application/json" -Body $body
+$p            # the created product, with its id
+$p.id
+
+# NOW reads have something to return
+Invoke-RestMethod $base           # list -> shows your Laptop
+Invoke-RestMethod "$base/$($p.id)"   # get by its real id
+
+# Add a couple more so search/filter is meaningful
+@(
+  @{ name="Mouse";    category="Electronics"; price=200;  quantity=2;  expiryDate="2030-06-01"; unitsSold=300 },
+  @{ name="Desk";     category="Furniture";   price=2500; quantity=1;  expiryDate="2035-01-01"; unitsSold=40 }
+) | ForEach-Object {
+    Invoke-RestMethod -Uri $base -Method Post -ContentType "application/json" -Body ($_ | ConvertTo-Json)
+}
+
+# SEARCH & FILTER now return real results
+Invoke-RestMethod "$base/category/Electronics"     # Laptop + Mouse
+Invoke-RestMethod "$base/low-stock?threshold=5"    # Mouse (2) and Desk (1)
 ```
 
 ## How the assignment requirements are met
