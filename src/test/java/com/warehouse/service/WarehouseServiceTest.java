@@ -95,4 +95,35 @@ void totalInventoryValueCalculatesCorrectTotal() {
                 result.get("Furniture")
         );
     }
+
+    @Test
+    void topNByPriceReturnsMostExpensiveProducts() {
+        ProductRepository repository = Mockito.mock(ProductRepository.class);
+        WarehouseService service = new WarehouseService(repository);
+
+        Product product1 = new Product(
+                "1",
+                "Laptop",
+                "Electronics",
+                new BigDecimal("1000"),
+                2,
+                LocalDate.of(2026, 9, 9),
+                10L
+        );
+        Product product2 = new Product(
+                "2",
+                "Phone",
+                "Electronics",
+                new BigDecimal("1500"),
+                1,
+                LocalDate.of(2026, 9, 9),
+                5L
+        );
+
+        Mockito.when(repository.findAll())
+                .thenReturn(List.of(product1, product2));
+
+        List<Product> result = service.topNByPrice(1);
+        assertEquals("2", result.get(0).id());
+    }
 }
