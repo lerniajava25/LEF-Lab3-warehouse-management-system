@@ -107,7 +107,12 @@ public class WarehouseService {
     // ---------------------------------------------------------------------
     // Requirement 2: Analysis & Aggregation
     // ---------------------------------------------------------------------
+    public BigDecimal totalInventoryValue() {
+        return getAllProducts().stream()
+                .map(Product::stockValue)
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
 
+    }
 
 
     // ---------------------------------------------------------------------
