@@ -72,12 +72,27 @@ void totalInventoryValueCalculatesCorrectTotal() {
                 LocalDate.of(2026, 9, 9),
                 0L
         );
+
+        Product product3 = new Product(
+                "3",
+                "Desk",
+                "Furniture",
+                new BigDecimal("500"),
+                1,
+                LocalDate.of(2026, 9, 9),
+                0L
+        );
+
         Mockito.when(repository.findAll())
-                .thenReturn(List.of(product1, product2));
+                .thenReturn(List.of(product1, product2, product3));
         Map<String, BigDecimal> result = service.averagePricePerCategory();
         assertEquals(
                 new BigDecimal("525.00"),
                 result.get("Electronics")
+        );
+        assertEquals(
+                new BigDecimal("500.00"),
+                result.get("Furniture")
         );
     }
 }
