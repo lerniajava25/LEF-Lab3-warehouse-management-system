@@ -8,10 +8,13 @@ import com.warehouse.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
+import java.util.stream.Collectors;
+
 
 //Holds all business logic for the warehouse,  CRUD operations delegate storage to the ProductRepository, All search, filtering, aggregation and sorting operations are implemented with the Java Streams API over the in memory collection returned by the repository.
 @Service
@@ -107,12 +110,37 @@ public class WarehouseService {
     // ---------------------------------------------------------------------
     // Requirement 2: Analysis & Aggregation
     // ---------------------------------------------------------------------
+    public BigDecimal totalInventoryValue() {
+        return getAllProducts().stream()
+                .map(Product::stockValue)
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
+    }
+        public Map<String, BigDecimal> averagePricePerCategory() {
+            return getAllProducts().stream()
+                    .collect(Collectors.groupingBy(
+                            Product::category,
+                            Collectors.collectingAndThen(
+                                    Collectors.mapping(Product::price, Collectors.toList()),
+                                    prices -> {
+                                        BigDecimal sum = prices.stream()
+                                                .reduce(BigDecimal.ZERO, BigDecimal::add);
+
+                                        return sum.divide(
+                                                BigDecimal.valueOf(prices.size()),
+                                                2,
+                                                RoundingMode.HALF_UP
+                                        );
+
+                                    }
+                            )
+                    ));
+
+        }
+    }
+
 
 
 
     // ---------------------------------------------------------------------
     // Requirement 3: Sorting
     // ---------------------------------------------------------------------
-
-
-}
