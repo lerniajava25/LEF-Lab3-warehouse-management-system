@@ -1,4 +1,189 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{}</component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="96b0f0cc-031f-4ac8-b447-a7fbc29e8ec2" name="Changes" comment="chore/update explaination for the post method">
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;El-Duckster&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/lerniajava25/LEF-Lab3-warehouse-management-system.git&quot;,
+    &quot;accountId&quot;: &quot;75337665-3344-477c-a8a1-fdbfb5436a85&quot;
+  }
+}</component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0011146696357527" />
+      <entry key="MS500" value="1.329154820712183" />
+      <entry key="S2" value="3.023673965608153" />
+      <entry key="S5" value="4.9278192724631955" />
+      <entry key="S10" value="6.162106985459461" />
+      <entry key="S30" value="7.3013504235079685" />
+      <entry key="S60" value="7.63843844119548" />
+      <entry key="M2" value="7.81603496093881" />
+      <entry key="M5" value="7.925633115551106" />
+      <entry key="M10" value="7.962685046898096" />
+      <entry key="M15" value="7.975123104475089" />
+      <entry key="M30" value="8.012095763710509" />
+      <entry key="H1" value="8.799904318333418" />
+      <entry key="H2" value="12.720415818556534" />
+      <entry key="H4" value="19.483904482740236" />
+      <entry key="D1" value="32.13118495961271" />
+      <entry key="W1" value="35.41137114291994" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9276353110637074" />
+      <entry key="MS500" value="1.3098175256454159" />
+      <entry key="S2" value="3.013573758172812" />
+      <entry key="S5" value="4.9214444750537085" />
+      <entry key="S10" value="6.158147583604176" />
+      <entry key="S30" value="7.299789763144417" />
+      <entry key="S60" value="7.637622203047266" />
+      <entry key="M2" value="7.815617359304714" />
+      <entry key="M5" value="7.925463731012497" />
+      <entry key="M10" value="7.962599958100227" />
+      <entry key="M15" value="7.975066270885249" />
+      <entry key="M30" value="8.012062019303318" />
+      <entry key="H1" value="8.79981968791242" />
+      <entry key="H2" value="12.720219811703341" />
+      <entry key="H4" value="19.483679908697507" />
+      <entry key="D1" value="32.13110917520357" />
+      <entry key="W1" value="35.41135891337877" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="3J4gp25eFxxRIbk8M1w02IWRcB2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Maven.Main.executor": "Run",
+    "Maven.WarehouseApplication.executor": "Run",
+    "Maven.warehouse-management-system [install...].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "#1 on feature/ground-work",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.runner"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="WarehouseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="LEF-Lab3-warehouse-management-system" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.warehouse.WarehouseApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.warehouse.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Spring Boot.WarehouseApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.WarehouseApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="96b0f0cc-031f-4ac8-b447-a7fbc29e8ec2" name="Changes" comment="" />
+      <created>1788925975302</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1788925975302</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chore/ add me readme file" />
+    <MESSAGE value="chore/edited" />
+    <MESSAGE value="chore/update explaination for the post method" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore/update explaination for the post method" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/LEF_Lab3_warehouse_management_system$Main.ic" NAME="Main Coverage Results" MODIFIED="1788935572317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+  </component>
 </project>

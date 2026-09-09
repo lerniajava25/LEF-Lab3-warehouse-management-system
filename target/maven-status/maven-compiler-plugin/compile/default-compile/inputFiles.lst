@@ -1,0 +1,11 @@
+C:\Users\46708\IdeaProjects\LEF-Lab3-warehouse-management-system\src\main\java\com\warehouse\controller\ProductController.java
+C:\Users\46708\IdeaProjects\LEF-Lab3-warehouse-management-system\src\main\java\com\warehouse\dataTransfereObjects\CreateProductRequest.java
+C:\Users\46708\IdeaProjects\LEF-Lab3-warehouse-management-system\src\main\java\com\warehouse\dataTransfereObjects\InventoryValueResponse.java
+C:\Users\46708\IdeaProjects\LEF-Lab3-warehouse-management-system\src\main\java\com\warehouse\dataTransfereObjects\UpdateProductRequest.java
+C:\Users\46708\IdeaProjects\LEF-Lab3-warehouse-management-system\src\main\java\com\warehouse\domain\Product.java
+C:\Users\46708\IdeaProjects\LEF-Lab3-warehouse-management-system\src\main\java\com\warehouse\exception\ApiError.java
+C:\Users\46708\IdeaProjects\LEF-Lab3-warehouse-management-system\src\main\java\com\warehouse\exception\ProductNotFoundException.java
+C:\Users\46708\IdeaProjects\LEF-Lab3-warehouse-management-system\src\main\java\com\warehouse\repository\InMemoryProductRepository.java
+C:\Users\46708\IdeaProjects\LEF-Lab3-warehouse-management-system\src\main\java\com\warehouse\repository\ProductRepository.java
+C:\Users\46708\IdeaProjects\LEF-Lab3-warehouse-management-system\src\main\java\com\warehouse\service\WarehouseService.java
+C:\Users\46708\IdeaProjects\LEF-Lab3-warehouse-management-system\src\main\java\com\warehouse\WarehouseApplication.java
