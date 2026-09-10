@@ -93,6 +93,18 @@ public class ProductController {
 
     // --------------------- Analysis & Aggregation ---------------------
 
+    //GET /api/products/total-inventory-value -> total value of all products in stock.
+    @GetMapping("/total-inventory-value")
+    public BigDecimal totalInventoryValue() {
+        return service.totalInventoryValue();
+    }
+
+    //GET /api/products/average-price-per-category -> average product price for each category.
+    @GetMapping("/average-price-per-category")
+    public Map<String, BigDecimal> averagePricePerCategory() {
+        return service.averagePricePerCategory();
+    }
+
 
 
     // ------------------------------ Sorting ------------------------------
