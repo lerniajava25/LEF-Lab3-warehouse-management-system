@@ -97,6 +97,16 @@ public class ProductController {
 
     // ------------------------------ Sorting ------------------------------
 
+    @GetMapping("/top-by-price")
+    public List<Product> topByPrice(@RequestParam int limit) {
+        return service.topNByPrice(limit);
+    }
+
+    @GetMapping("/top-by-popularity")
+    public List<Product> topByPopularity(@RequestParam int limit) {
+        return service.topNByPopularity(limit);
+    }
+
 
 
 }
