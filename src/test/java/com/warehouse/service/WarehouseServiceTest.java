@@ -16,6 +16,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class WarehouseServiceTest {
 
 
+    // --------------------- Analysis & Aggregation ---------------------
+
+    // Tests calculation of the total inventory value
 @Test
 void totalInventoryValueCalculatesCorrectTotal() {
     ProductRepository repository = Mockito.mock(ProductRepository.class);
@@ -49,6 +52,7 @@ void totalInventoryValueCalculatesCorrectTotal() {
     assertEquals(new BigDecimal("2150"), result);
 }
 
+    // Tests calculation of the average price for each category
     @Test
     void shouldCalculateAveragePricePerCategory() {
         ProductRepository repository = Mockito.mock(ProductRepository.class);
@@ -96,6 +100,9 @@ void totalInventoryValueCalculatesCorrectTotal() {
         );
     }
 
+    // ------------------------------ Sorting ------------------------------
+
+    // Tests that topNByPrice returns the most expensive product first
     @Test
     void topNByPriceReturnsMostExpensiveProducts() {
         ProductRepository repository = Mockito.mock(ProductRepository.class);
@@ -127,6 +134,7 @@ void totalInventoryValueCalculatesCorrectTotal() {
         assertEquals("2", result.get(0).id());
     }
 
+    // Tests that topNByPopularity returns the product with the most units sold first
     @Test
     void topNByPopularityReturnsMostPopularProducts() {
         ProductRepository repository = Mockito.mock(ProductRepository.class);

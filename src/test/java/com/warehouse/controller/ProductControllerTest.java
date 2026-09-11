@@ -39,6 +39,7 @@ class ProductControllerTest {
     @MockitoBean
     private WarehouseService service;
 
+    // ----------------------------- CRUD -----------------------------
     // Tests GET /api/products - returns all products
     @Test
     void getAllReturnsProducts() throws Exception {
@@ -206,6 +207,8 @@ class ProductControllerTest {
                 .andExpect(jsonPath("$[0].quantity").value(5));
     }
 
+    // --------------------- Analysis & Aggregation ---------------------
+
     // Tests GET /api/products/total-inventory-value
     @Test
     void totalInventoryValueReturnsValue() throws Exception {
@@ -234,5 +237,76 @@ class ProductControllerTest {
                       "Furniture": 500.00
                     }
                     """));
+    }
+
+    // ------------------------------ Sorting ------------------------------
+
+    // Tests GET /api/products/top-by-price - returns products sorted by price
+
+    @Test
+    void topByPriceReturnsProducts() throws Exception {
+
+        Product product1 = new Product(
+                "1",
+                "Laptop",
+                "Electronics",
+                new BigDecimal("1500"),
+                5,
+                LocalDate.of(2026, 9, 10),
+                0L
+        );
+
+        Product product2 = new Product(
+                "2",
+                "Mouse",
+                "Electronics",
+                new BigDecimal("50"),
+                10,
+                LocalDate.of(2026, 9, 10),
+                0L
+        );
+
+        Mockito.when(service.topNByPrice(2))
+                .thenReturn(List.of(product1, product2));
+
+        mockMvc.perform(get("/api/products/top-by-price")
+                        .param("limit", "2"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$[0].price").value(1500))
+                .andExpect(jsonPath("$[1].price").value(50));
+    }
+
+    // Tests GET /api/products/top-by-popularity - returns products sorted by popularity
+    @Test
+    void topByPopularityReturnsProducts() throws Exception {
+
+        Product product1 = new Product(
+                "1",
+                "Laptop",
+                "Electronics",
+                new BigDecimal("1500"),
+                5,
+                LocalDate.of(2026, 9, 10),
+                100L
+        );
+
+        Product product2 = new Product(
+                "2",
+                "Mouse",
+                "Electronics",
+                new BigDecimal("50"),
+                10,
+                LocalDate.of(2026, 9, 10),
+                50L
+        );
+
+        Mockito.when(service.topNByPopularity(2))
+                .thenReturn(List.of(product1, product2));
+
+        mockMvc.perform(get("/api/products/top-by-popularity")
+                        .param("limit", "2"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$[0].unitsSold").value(100))
+                .andExpect(jsonPath("$[1].unitsSold").value(50));
     }
     }
