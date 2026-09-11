@@ -115,32 +115,45 @@ public class WarehouseService {
                 .map(Product::stockValue)
                 .reduce(BigDecimal.ZERO, BigDecimal::add);
     }
-        public Map<String, BigDecimal> averagePricePerCategory() {
-            return getAllProducts().stream()
-                    .collect(Collectors.groupingBy(
-                            Product::category,
-                            Collectors.collectingAndThen(
-                                    Collectors.mapping(Product::price, Collectors.toList()),
-                                    prices -> {
-                                        BigDecimal sum = prices.stream()
-                                                .reduce(BigDecimal.ZERO, BigDecimal::add);
 
-                                        return sum.divide(
-                                                BigDecimal.valueOf(prices.size()),
-                                                2,
-                                                RoundingMode.HALF_UP
-                                        );
+    public Map<String, BigDecimal> averagePricePerCategory() {
+        return getAllProducts().stream()
+                .collect(Collectors.groupingBy(
+                        Product::category,
+                        Collectors.collectingAndThen(
+                                Collectors.mapping(Product::price, Collectors.toList()),
+                                prices -> {
+                                    BigDecimal sum = prices.stream()
+                                            .reduce(BigDecimal.ZERO, BigDecimal::add);
 
-                                    }
-                            )
-                    ));
+                                    return sum.divide(
+                                            BigDecimal.valueOf(prices.size()),
+                                            2,
+                                            RoundingMode.HALF_UP
+                                    );
 
-        }
+                                }
+                        )
+                ));
+
     }
-
-
 
 
     // ---------------------------------------------------------------------
     // Requirement 3: Sorting
     // ---------------------------------------------------------------------
+
+    public List<Product> topNByPrice(int n) {
+        return getAllProducts().stream()
+                .sorted(Comparator.comparing(Product::price).reversed())
+                .limit(n)
+                .toList();
+    }
+
+    public List<Product> topNByPopularity(int n) {
+        return getAllProducts().stream()
+                .sorted(Comparator.comparing(Product::unitsSold).reversed())
+                .limit(n)
+                .toList();
+    }
+}

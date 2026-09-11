@@ -15,6 +15,7 @@ import org.mockito.Mockito;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Map;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
@@ -24,7 +25,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.header;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
-
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import org.springframework.http.MediaType;
 
 
@@ -203,5 +204,35 @@ class ProductControllerTest {
                         .param("threshold", "10"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$[0].quantity").value(5));
+    }
+
+    // Tests GET /api/products/total-inventory-value
+    @Test
+    void totalInventoryValueReturnsValue() throws Exception {
+        Mockito.when(service.totalInventoryValue())
+                .thenReturn(new BigDecimal("2150"));
+
+        mockMvc.perform(get("/api/products/total-inventory-value"))
+                .andExpect(status().isOk())
+                .andExpect(content().string("2150"));
+    }
+
+    // Tests GET /api/products/average-price-per-category
+    @Test
+    void averagePricePerCategoryReturnsValues() throws Exception {
+        Mockito.when(service.averagePricePerCategory())
+                .thenReturn(Map.of(
+                        "Electronics", new BigDecimal("525.00"),
+                        "Furniture", new BigDecimal("500.00")
+                ));
+
+        mockMvc.perform(get("/api/products/average-price-per-category"))
+                .andExpect(status().isOk())
+                .andExpect(content().json("""
+                    {
+                      "Electronics": 525.00,
+                      "Furniture": 500.00
+                    }
+                    """));
     }
     }

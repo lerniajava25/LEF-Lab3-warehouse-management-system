@@ -133,6 +133,25 @@ it avoids floating-point rounding errors, and averages are rounded explicitly wi
 
 ---
 
+## Language comparison: Java/Spring Boot vs C#/.NET
+
+One similarity is that both Java and C# are statically typed, object-oriented
+programming languages. Both support concepts such as classes, interfaces,
+inheritance and polymorphism. Both platforms also provide frameworks for
+building REST APIs and support dependency injection, which helps structure
+larger applications.
+
+A difference is the platform and ecosystem they use. Java applications
+commonly run on the Java Virtual Machine (JVM), while C# applications
+typically run on the .NET platform. Java has a large ecosystem of libraries
+and frameworks, with Spring Boot being a widely used choice for backend
+development. C# is closely integrated with Microsoft's .NET ecosystem.
+
+In our project, Spring Boot has made it easier to create REST endpoints and
+organize the application into separate layers such as Controller, Service
+and Repository. This separation makes the code easier to understand, test
+and maintain.
+
 ### Division of labour
 
 The three Stream-based feature groups are split one per person (as the teacher suggested),
